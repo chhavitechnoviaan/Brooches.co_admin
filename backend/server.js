@@ -42,6 +42,7 @@ app.use(
     origin: [
       "http://localhost:5174",
       "http://localhost:5173",
+      "brooches-co-admin.onrender.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
