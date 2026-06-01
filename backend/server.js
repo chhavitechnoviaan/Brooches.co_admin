@@ -29,7 +29,7 @@ const app = express();
 
 // DATABASE
 
-connectDB();
+// connectDB();
 // MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -42,7 +42,8 @@ app.use(
     origin: [
       "http://localhost:5174",
       "http://localhost:5173",
-      "brooches-co-admin-gn2rni0bf-broochesco123.vercel.app",
+      "https://brooches-co-admin.vercel.app",
+      "https://brooches-co-admin-b3m6x5qzl-broochesco123.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
