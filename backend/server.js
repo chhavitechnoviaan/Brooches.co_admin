@@ -43,6 +43,7 @@ app.use(
       "http://localhost:5174",
       "http://localhost:5173",
       "https://brooches-co-admin.vercel.app",
+     
       "https://brooches-co-admin-b3m6x5qzl-broochesco123.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
