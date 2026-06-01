@@ -37,21 +37,21 @@ app.get("/", (req, res) => {
   res.send("Backend Running");
 });
 
+
+
+
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5174",
-      "http://localhost:5173",
-      "https://brooches-co-admin.vercel.app",
-     
-      "https://brooches-co-admin-b3m6x5qzl-broochesco123.vercel.app"
-    ],
+    origin: true,
+    credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
   })
 );
 
+// Preflight requests handle karo
+app.options("*", cors());
 // app.use("/uploads", express.static("uploads"));
 
 app.use("/uploads",express.static(path.join(process.cwd(), "uploads")));
